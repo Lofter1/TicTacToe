@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_span="3"
+                android:id="@+id/winnerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text=""/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="132dp">
+
+            <Button
+                android:id="@+id/field00"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField00" />
+
+            <Button
+                android:id="@+id/field01"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField01" />
+
+            <Button
+                android:id="@+id/field02"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField02"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/field10"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField10" />
+
+            <Button
+                android:id="@+id/field11"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField11" />
+
+            <Button
+                android:id="@+id/field12"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField12" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/field20"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField20" />
+
+
+            <Button
+                android:id="@+id/field21"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField21" />
+
+
+            <Button
+                android:id="@+id/field22"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:onClick="setField22" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+            <Button
+                android:layout_span="3"
+                android:id="@+id/resetButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="1dp"
+                android:text="@string/reset"
+                android:onClick="resetGame" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
